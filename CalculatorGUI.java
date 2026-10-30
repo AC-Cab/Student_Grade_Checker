@@ -5,9 +5,11 @@ import java.awt.*;
 public class CalculatorGUI{
 
 public static void main(String[] args){
-JFrame frame=new JFrame("Calculator"); frame.setSize (500,509);
+JFrame frame=new JFrame("Calculator"); 
+frame.setSize (500,600);
+frame.setResizable(false);
 frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-frame.setLayout(new FlowLayout (FlowLayout .LEFT,20,10));
+frame.setLayout(new FlowLayout(nullsAreSortedAtStart()));
 //Cabusas
 JLabel lblNum1 = new JLabel("Enter #1 ");
 JTextField txtNum1 = new JTextField(15);
