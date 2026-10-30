@@ -13,7 +13,9 @@ JLabel lblNum1 = new JLabel("Enter #1 ");
 JTextField txtNuml = new JTextField(15);
 JLabel IblNum2 = new JLabel("Enter #2");
 JTextField txtNum2 = new JTextField(15);
-
+//Jumangpang
+JButton gtnResult = new JButton("Show Result");
+JButton gtnClear = new JButton("Clear");
 
 
 
