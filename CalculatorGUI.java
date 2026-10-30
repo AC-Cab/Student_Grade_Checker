@@ -27,3 +27,31 @@ f.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 display.setBounds(20, 35, 245, 40);
 
 f.add(display);
+
+//Jumangpang
+
+String[] buttons = {
+    "7", "8", "9", "/",
+    "4", "5", "6", "*",
+    "1", "2", "3", "-",
+    "0", ".", "=", "+"
+};
+
+for (int i = 0; i < buttons.length; i++) {
+
+    JButton b = new JButton(buttons[i]);
+
+    b.setBounds(
+        20 + (i % 4) * 62,
+        90 + (i / 4) * 55,
+        55, 45
+    );
+
+    f.add(b);
+
+    b.addActionListener(e -> {
+        display.setText(
+            display.getText() + b.getText()
+        );
+    });
+}
